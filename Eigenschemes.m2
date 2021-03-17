@@ -4,14 +4,12 @@ loadPackage("Points")
 
 -- P is a nx3 matrix with rational entries, d\geq 2 is a positive integer and R is QQ[x0,x1,x2]
 isEigenscheme = (P,d,R) -> (
-	M := transpose(P);
-	(I,G) := projectivePoints(M,R);
+	(I,G) := projectivePoints(P,R);
 	return isIdealEigenscheme(ideal(G),d)
 )
 
 isEigenschemeSymmetric = (P,d,R) -> (
-	M := transpose(P);
-	(I,G) := projectivePoints(M,R);
+	(I,G) := projectivePoints(P,R);
 	return isIdealEigenschemeSymmetric(ideal(G),d)
 )
 
