@@ -65,5 +65,6 @@ reconstructSymmetricTensor = (AH,d,R) -> (
 	XX := solve(AA,transpose BB);
 	ftilde := sum(toList apply((0..binomial(d+2,2)-1), i-> ((flatten entries XX)#i) * Md#i));
 	map4 := map(R, ring(ftilde));
+	use R;
 	return(map4(ftilde))
 )    
