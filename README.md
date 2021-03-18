@@ -1,4 +1,4 @@
-# Geometry-of-ternary-tensor-eigenshcemes
+# Geometry-of-ternary-tensor-eigenschemes
 We include some Macaulay2 functions to test whether a configuration of d^2-d+1 points is the eigenscheme of a partially symmetric tensor in Sym^{d-1}(C^3)^3 or of a symmetric tensor in Sym^d(C^3). See https://arxiv.org/abs/2007.12789 for a reference.
 
 The file Eigenschemes.m2 contains the code for 5 functions: `isEigenscheme`, `isEigenschemeSymmetric`, `isIdealEigenscheme`, `isIdealEigenschemeSymmetric`, `reconstructSymmetricTensor`.
